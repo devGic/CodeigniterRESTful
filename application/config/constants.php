@@ -83,3 +83,23 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+// ********** Devoper Constants **************
+// 
+// NIGATIVE CODE
+define('MISSING_PARAM_CODE', 440);
+define('INVALID_USER_ID_CODE', 441);
+define('SERVER_IS_NOT_AVAILABLE_CODE', 442);
+define('INVALID_MEMBER_TYPE', 443);
+define('INVALID_FILE_TYPE', 444);
+define('INVALID_REQUEST', 445);
+define('INVALID_ACCESS_KEY', 446);
+define('DUPLICATE_PRODUCT', 447);
+define('OWNER_ID_DONOT_EXIST', 448);
+define('INVALID_MONGO_ID', 449);
+define('INVALID_CHARACTOR_LENGTH', 450);
+define('PROCESS_FAILS_CODE', 0);
+
+// POSITIVE CODE
+define('SUCCESS_CODE', 1);

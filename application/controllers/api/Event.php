@@ -5,13 +5,16 @@ class Event extends REST_Controller {
 
 	function __construct()
 	{
-		parent::__construct();	
+		parent::__construct();
+		$this->load->model('api/Event_model','event');	
 	}
 
 	
 
 	public function index_get(){
-		$this->response('Hello from Evnet controller');
+		$events = $this->event->get_events();
+		$this->response(msg_success($events));
+
 	}
 
 	
